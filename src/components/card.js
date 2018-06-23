@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Input from './input';
+import Content from './content';
 
 class Card extends Component {
 	constructor() {
@@ -31,7 +32,6 @@ class Card extends Component {
 		this.setState({
 			[event.target.name]: event.target.value
 		});
-		console.log(this.state);
 	}
 
 	render() {
@@ -61,6 +61,8 @@ class Card extends Component {
 				{
 					inputData.map(data => Input((data), this.handleInputChange)) // unsure why parenthesis were needed around "data"
 				}
+				
+				<Content data={this.state}/>
 			</div>
 		);
 	}
