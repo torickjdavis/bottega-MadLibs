@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Input = ({ title, state, name }, onChange) => { // using object deconstruction assignment
+const Input = ({ title, state, name }, onChange, index) => { // using object deconstruction assignment
 	return (
-		<div key={name} className="input">
+		<div key={index} className="input">
+			<label className="input__numer">{index + 1}</label>
 			<input name={name} value={state} onChange={onChange}/>
-			<label>{title}</label>
+			<label className="input__title">{title}</label>
 		</div>
 	);
 };

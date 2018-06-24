@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 class Content extends Component {
 	render() {
 		const data = this.props.data;
+		// const arr = [...data];
+		// <span>{arr.indexOf(data.color)}</span>
+
 		return (
 			<p>
 				Ladies and gentlemen, this is <b>{data.color}</b> Barber, your sportscaster, bringing you the last inning of the game 
@@ -15,7 +18,7 @@ class Content extends Component {
 				ball to third <b>{data.nounThree}</b>. <b>{data.celebFour}</b> scoops it up and throws it to first base for an out and the 
 				game is over. And the Yankees move into second place in the <b>{data.adjectiveFive}</b> League!
 			</p>
-		)
+		);
 	}
 }
 

@@ -74,12 +74,14 @@ class Card extends Component {
 			<form onSubmit={this.handleFormSubmit} className="card">
 				<div className="card__inputs">
 					{
-						inputData.map(data => Input((data), this.handleInputChange)) // unsure why parenthesis were needed around "data"
+						inputData.map((data, index) => {
+							return Input((data), this.handleInputChange, index);
+						}) // unsure why parenthesis were needed around "data"
 					}
 				</div>
 				<button type="submit">{ !this.state.contentVisible ? 'Generate Mad Lib' : 'Clear Form' }</button>
 				{
-					this.state.contentVisible ? <Content data={this.state }/> : ''
+					this.state.contentVisible ? <Content data={ this.state }/> : ''
 				}
 			</form>
 		);
