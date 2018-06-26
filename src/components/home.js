@@ -14,4 +14,11 @@ class Home extends Component {
   }
 }
 
+/* TODO
+// Placeholder
+// Grey and Green Number Labels
+// Generate Button Space / Card Height
+// Content Labels
+*/
+
 export default Home;
