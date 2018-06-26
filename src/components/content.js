@@ -11,6 +11,11 @@ class Content extends Component {
 			<b>{data}</b>
 		];
 	}
+
+	componentWillReceiveProps() { // component lifecycle method
+		this.count = 1;
+	}
+
 	render() {
 		const data = this.props.data;
 		// const arr = [...data];
