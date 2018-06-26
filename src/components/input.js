@@ -3,8 +3,8 @@ import React from 'react';
 const Input = ({ title, state, name }, onChange, index) => { // using object deconstruction assignment
 	return (
 		<div key={index} className="input">
-			<label className="input__number">{index + 1}</label>
-			<input name={name} value={state} onChange={onChange}/>
+			<label className={`input__number ${state == '' ? 'grey' : 'green'}`}>{index + 1}</label>
+			<input placeholder={title} name={name} value={state} onChange={onChange}/>
 			<label className="input__title">{title}</label>
 		</div>
 	);

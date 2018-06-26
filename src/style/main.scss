@@ -2,6 +2,14 @@ body {
 	margin: 0; // added to pull content to the edge of the page
 }
 
+.grey {
+	background: #B3B3B3;
+}
+
+.green {
+	background: #00CB79;
+}
+
 @mixin button {
 	height: 50px;
 	width: 300px;
@@ -168,7 +176,6 @@ body {
 	}
 	&__number {
 		grid-column: number-start/number-end; // 1/2
-		background-color: #00CB79;
 		color: white;
 		font-size: 20px;
 		text-align: center;
