@@ -112,6 +112,7 @@ body {
 
 	button {
 		justify-self: center;
+		transition: background-color 200ms ease;
 		@include button; // practice for mixins
 	}
 	button:focus {
@@ -187,9 +188,8 @@ body {
 		border-bottom: 1px solid #B3B3B3;
 		font-size: 15px;
 		text-align: inherit;
-		padding: 4px 0;
 		transition: all 0.3s ease;
-
+		margin-top: 15%; // added to have better proximity
 		&:focus {
 			outline: none;
 			border-color: #00CB79;
